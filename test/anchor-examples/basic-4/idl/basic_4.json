@@ -74,6 +74,31 @@
           {
             "name": "count",
             "type": "u64"
+          },
+          {
+            "name": "status",
+            "type": {
+              "defined": "Status"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "types": [
+    {
+      "name": "Status",
+      "type": {
+        "kind": "enum",
+        "variants": [
+          {
+            "name": "One"
+          },
+          {
+            "name": "Two"
+          },
+          {
+            "name": "Three"
           }
         ]
       }

@@ -6,14 +6,15 @@ declare_id!("CwrqeMj2U8tFr1Rhkgwc84tpAsqbt9pTt2a4taoTADPr");
 mod basic_4 {
     use super::*;
 
-    pub fn create(ctx: Context<Create>, authority: Pubkey) -> ProgramResult {
+    pub fn create(ctx: Context<Create>, authority: Pubkey) -> Result<()> {
         let counter = &mut ctx.accounts.counter;
         counter.authority = authority;
         counter.count = 0;
+        counter.status = Status::One;
         Ok(())
     }
 
-    pub fn increment(ctx: Context<Increment>) -> ProgramResult {
+    pub fn increment(ctx: Context<Increment>) -> Result<()> {
         let counter = &mut ctx.accounts.counter;
         if !counter.authority.eq(ctx.accounts.authority.key) {
             return Err(ErrorCode::Unauthorized.into());
@@ -25,7 +26,7 @@ mod basic_4 {
         Ok(())
     }
 
-    pub fn decrement(ctx: Context<Increment>) -> ProgramResult {
+    pub fn decrement(ctx: Context<Increment>) -> Result<()> {
         let counter = &mut ctx.accounts.counter;
         if !counter.authority.eq(ctx.accounts.authority.key) {
             return Err(ErrorCode::Unauthorized.into());
@@ -40,7 +41,7 @@ mod basic_4 {
 
 #[derive(Accounts)]
 pub struct Create<'info> {
-    #[account(init, payer = user, space = 8 + 40)]
+    #[account(init, payer = user, space = 8 + 40 + 1)]
     pub counter: Account<'info, Counter>,
     #[account(mut)]
     pub user: Signer<'info>,
@@ -58,9 +59,17 @@ pub struct Increment<'info> {
 pub struct Counter {
     pub authority: Pubkey,
     pub count: u64,
+    pub status: Status,
 }
 
-#[error]
+#[derive(AnchorSerialize, AnchorDeserialize, Clone)]
+pub enum Status {
+    One,
+    Two,
+    Three,
+}
+
+#[error_code]
 pub enum ErrorCode {
     #[msg("You are not authorized to perform this action.")]
     Unauthorized,
