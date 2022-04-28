@@ -1,9 +1,12 @@
 {
   "name": "@metaplex-foundation/solita",
-  "version": "0.2.0",
+  "version": "0.5.3",
   "description": "Generates SDK API from solana contract IDL.",
   "main": "dist/src/solita.js",
   "types": "dist/src/solita.d.ts",
+  "bin": {
+    "solita": "dist/src/cli/solita.js"
+  },
   "scripts": {
     "check:publish-ready": "yarn build && yarn test",
     "preversion": "yarn check:publish-ready",
@@ -46,6 +49,7 @@
   },
   "dependencies": {
     "@metaplex-foundation/beet-solana": "^0.1.1",
+    "@metaplex-foundation/rustbin": "^0.3.0",
     "@solana/web3.js": "^1.36.0",
     "camelcase": "^6.2.1",
     "debug": "^4.3.3",
@@ -55,7 +59,7 @@
     "spok": "^1.4.3"
   },
   "devDependencies": {
-    "@metaplex-foundation/amman": "^0.0.9",
+    "@metaplex-foundation/amman": "^0.6.1",
     "@project-serum/anchor": "^0.19.1-beta.1",
     "@types/debug": "^4.1.7",
     "@types/eslint": "^8.2.2",

@@ -1,0 +1,12 @@
+/home/caleb/projects/solita/test/anchor-examples/basic-4/target/bpfel-unknown-unknown/release/deps/ahash-98ec132da7fc0e40.rmeta: /home/caleb/.cargo/registry/src/github.com-1ecc6299db9ec823/ahash-0.7.6/src/lib.rs /home/caleb/.cargo/registry/src/github.com-1ecc6299db9ec823/ahash-0.7.6/src/convert.rs /home/caleb/.cargo/registry/src/github.com-1ecc6299db9ec823/ahash-0.7.6/src/fallback_hash.rs /home/caleb/.cargo/registry/src/github.com-1ecc6299db9ec823/ahash-0.7.6/src/operations.rs /home/caleb/.cargo/registry/src/github.com-1ecc6299db9ec823/ahash-0.7.6/src/random_state.rs /home/caleb/.cargo/registry/src/github.com-1ecc6299db9ec823/ahash-0.7.6/src/specialize.rs
+
+/home/caleb/projects/solita/test/anchor-examples/basic-4/target/bpfel-unknown-unknown/release/deps/libahash-98ec132da7fc0e40.rlib: /home/caleb/.cargo/registry/src/github.com-1ecc6299db9ec823/ahash-0.7.6/src/lib.rs /home/caleb/.cargo/registry/src/github.com-1ecc6299db9ec823/ahash-0.7.6/src/convert.rs /home/caleb/.cargo/registry/src/github.com-1ecc6299db9ec823/ahash-0.7.6/src/fallback_hash.rs /home/caleb/.cargo/registry/src/github.com-1ecc6299db9ec823/ahash-0.7.6/src/operations.rs /home/caleb/.cargo/registry/src/github.com-1ecc6299db9ec823/ahash-0.7.6/src/random_state.rs /home/caleb/.cargo/registry/src/github.com-1ecc6299db9ec823/ahash-0.7.6/src/specialize.rs
+
+/home/caleb/projects/solita/test/anchor-examples/basic-4/target/bpfel-unknown-unknown/release/deps/ahash-98ec132da7fc0e40.d: /home/caleb/.cargo/registry/src/github.com-1ecc6299db9ec823/ahash-0.7.6/src/lib.rs /home/caleb/.cargo/registry/src/github.com-1ecc6299db9ec823/ahash-0.7.6/src/convert.rs /home/caleb/.cargo/registry/src/github.com-1ecc6299db9ec823/ahash-0.7.6/src/fallback_hash.rs /home/caleb/.cargo/registry/src/github.com-1ecc6299db9ec823/ahash-0.7.6/src/operations.rs /home/caleb/.cargo/registry/src/github.com-1ecc6299db9ec823/ahash-0.7.6/src/random_state.rs /home/caleb/.cargo/registry/src/github.com-1ecc6299db9ec823/ahash-0.7.6/src/specialize.rs
+
+/home/caleb/.cargo/registry/src/github.com-1ecc6299db9ec823/ahash-0.7.6/src/lib.rs:
+/home/caleb/.cargo/registry/src/github.com-1ecc6299db9ec823/ahash-0.7.6/src/convert.rs:
+/home/caleb/.cargo/registry/src/github.com-1ecc6299db9ec823/ahash-0.7.6/src/fallback_hash.rs:
+/home/caleb/.cargo/registry/src/github.com-1ecc6299db9ec823/ahash-0.7.6/src/operations.rs:
+/home/caleb/.cargo/registry/src/github.com-1ecc6299db9ec823/ahash-0.7.6/src/random_state.rs:
+/home/caleb/.cargo/registry/src/github.com-1ecc6299db9ec823/ahash-0.7.6/src/specialize.rs:
